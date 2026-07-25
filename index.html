@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,41 +13,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="css/estilos.css">
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
 </head>
+
 <body>
-    <!-- <h1>        
-        <small>Integrantes del Grupo 2</small>
-    </h1>
-
-    lista de nombres (id para referencia en JS) -->
-   <!-- <div class="list-container" id="nameList">
-        <div class="name-item">Godofredo Sandoval Ramírez</div>
-        <div class="name-item">Máximo Polo Salinas</div>
-        <div class="name-item">Jhon Bryan Curo Maldonado</div>
-        <div class="name-item">Rafael Alberto Sipión Díaz</div>
-        <div class="name-item">Gálvez Martínez Jim Antony</div>
-        <div class="name-item">Gabriela Mirtha Rios Villanueva</div>
-    </div>-->
-
+   
     <!-- ============================================ -->
     <!-- MENÚ DE NAVEGACIÓN                           -->
     <!-- ============================================ -->
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">MiPortafolio</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -60,13 +55,14 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-center text-lg-start">
-                    <h1 class="display-4 fw-bold">Bienvenidos <br><span class="text-highlight">Somos Equipo 2</span></h1>
+                    <h1 class="display-4 fw-bold">Bienvenidos <br><span class="text-highlight">Somos Equipo 2</span>
+                    </h1>
                     <p class="lead mt-3 mb-4">
                         Desarrollador Web apasionado por crear experiencias digitales
                         innovadoras y funcionales.
                     </p>
                     <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-                        
+
                         <a href="#proyectos" class="btn btn-primary btn-lg px-5">Ver Proyectos</a>
                         <a href="#contacto" class="btn btn-outline-primary btn-lg px-5">Contactar</a>
                     </div>
@@ -81,15 +77,18 @@
     <!-- ============================================ -->
     <!-- SECCIÓN: CARRUSEL                           -->
     <!-- ============================================ -->
-    <section id="carrusel" class="py-2"> 
+    <section id="carrusel" class="py-2">
         <div class="container">
             <div class="caja-carrusel p-2">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <!-- Indicadores -->
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
                     <!-- Diapositivas -->
                     <div class="carousel-inner rounded-3 overflow-hidden">
@@ -104,11 +103,13 @@
                         </div>
                     </div>
                     <!-- Controles -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
                     </button>
@@ -120,7 +121,7 @@
     <!-- ============================================ -->
     <!-- SECCIÓN: SOBRE MÍ                           -->
     <!-- ============================================ -->
-    <section id="sobre-mi" class="py-5"> 
+    <section id="sobre-mi" class="py-5">
         <div class="container">
             <h2 class="section-title text-center mb-5">Sobre Mí</h2>
             <div class="row align-items-center">
@@ -164,15 +165,25 @@
     <section id="proyectos" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title text-center mb-5">Mis Proyectos</h2>
-            <div class="row g-4">
+
+            <!-- Botones de control para demostrar manipulación del DOM -->
+            <div class="text-center mb-4">
+                <button class="btn btn-primary me-2" onclick="cambiarTexto()">Cambiar Texto</button>
+                <button class="btn btn-success me-2" onclick="cambiarEstilos()">Cambiar Estilos</button>
+                <button class="btn btn-warning me-2" onclick="mostrarOcultar()">Mostrar/Ocultar</button>
+                <button class="btn btn-info" onclick="cambiarImagenes()">Cambiar Imágenes</button>
+                <button class="btn btn-info" onclick="restablecerTodo()">resetear todo</button>
+            </div>
+
+            <div class="row g-4" id="proyectosContainer">
 
                 <!-- Proyecto 1 -->
-                <div class="col-md-4">
+                <div class="col-md-4 project-item">
                     <div class="card h-100 project-card border-0 shadow-sm">
-                        <img src="img/ecommerce.jpg" class="card-img-top" alt="Proyecto E-Commerce">
+                        <img src="img/ecommerce.jpg" class="card-img-top project-img" alt="Proyecto E-Commerce">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">E-Commerce</h5>
-                            <p class="card-text text-muted">
+                            <h5 class="card-title fw-bold project-title">E-Commerce</h5>
+                            <p class="card-text text-muted project-desc">
                                 Tienda online con carrito de compras, integración de pagos
                                 y panel de administración.
                             </p>
@@ -185,12 +196,12 @@
                 </div>
 
                 <!-- Proyecto 2 -->
-                <div class="col-md-4">
+                <div class="col-md-4 project-item">
                     <div class="card h-100 project-card border-0 shadow-sm">
-                        <img src="img/img1.jpg" class="card-img-top" alt="Proyecto Blog Personal">
+                        <img src="img/img1.jpg" class="card-img-top project-img" alt="Proyecto Blog Personal">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Blog Personal</h5>
-                            <p class="card-text text-muted">
+                            <h5 class="card-title fw-bold project-title">Blog Personal</h5>
+                            <p class="card-text text-muted project-desc">
                                 Blog con sistema de comentarios, categorías y buscador,
                                 desarrollado con diseño responsivo.
                             </p>
@@ -203,12 +214,12 @@
                 </div>
 
                 <!-- Proyecto 3 -->
-                <div class="col-md-4">
+                <div class="col-md-4 project-item">
                     <div class="card h-100 project-card border-0 shadow-sm">
-                        <img src="img/img02.jpg" class="card-img-top" alt="Proyecto App de Tareas">
+                        <img src="img/img02.jpg" class="card-img-top project-img" alt="Proyecto App de Tareas">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">App de Tareas</h5>
-                            <p class="card-text text-muted">
+                            <h5 class="card-title fw-bold project-title">App de Tareas</h5>
+                            <p class="card-text text-muted project-desc">
                                 Aplicación de gestión de tareas con CRUD completo,
                                 almacenamiento en localStorage y filtros.
                             </p>
@@ -254,29 +265,38 @@
                             </li>
                         </ul>
                         <div class="social-links mt-4">
-                            <a href="https://pe.linkedin.com/" target="_blank" class="btn btn-outline-primary rounded-circle me-2"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/" target="_blank" class="btn btn-outline-dark rounded-circle me-2"><i class="bi bi-github"></i></a>
-                            <a href="https://x.com/?lang=es" target="_blank" class="btn btn-outline-info rounded-circle me-2"><i class="bi bi-twitter-x"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-danger rounded-circle me-2"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.youtube.com/" target="_blank" class="btn btn-outline-danger rounded-circle"><i class="bi bi-youtube"></i></a>
+                            <a href="https://pe.linkedin.com/" target="_blank"
+                                class="btn btn-outline-primary rounded-circle me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/" target="_blank"
+                                class="btn btn-outline-dark rounded-circle me-2"><i class="bi bi-github"></i></a>
+                            <a href="https://x.com/?lang=es" target="_blank"
+                                class="btn btn-outline-info rounded-circle me-2"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"
+                                class="btn btn-outline-danger rounded-circle me-2"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"
+                                class="btn btn-outline-danger rounded-circle"><i class="bi bi-youtube"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Formulario de contacto -->
+
+<!-- Formulario de contacto -->
                 <div class="col-lg-6">
-                    <form class="p-4 rounded-4 shadow-sm bg-white">
+                    <form class="p-4 rounded-4 shadow-sm bg-white" id="miFormulario">
                         <div class="mb-3">
                             <label for="nombre" class="form-label fw-semibold">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label fw-semibold">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" required>
+                            <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            <textarea class="form-control" id="mensaje" rows="4"
+                                placeholder="Escribe tu mensaje aquí..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">
                             <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
@@ -284,19 +304,120 @@
                     </form>
                 </div>
             </div>
+
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN: SERVICIOS -->
+    <!-- ============================================ -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-2">Nuestros Planes de Servicio</h2>
+            <p class="text-center text-muted mb-5" id="mensajeBienvenida"></p>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Plan Básico -->
+                <div class="col-lg-4">
+                    <div class="card h-100 plan-card border-0 shadow-sm" id="cardBasico">
+                        <img src="img/img001.jpg" class="card-img-top" alt="Plan Básico"
+                            style="height:180px; object-fit:cover;">
+                        <div class="card-body">
+                            <h4 class="fw-bold text-primary">Plan Básico</h4>
+                            <p class="text-muted">Ideal si necesitas presencia web rápida y funcional.</p>
+
+                            <div class="mb-3">
+                                <label for="tipoBasico" class="form-label fw-semibold">¿Qué necesitas?</label>
+                                <select class="form-select" id="tipoBasico">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="Landing Page">Landing Page</option>
+                                    <option value="Blog">Blog</option>
+                                    <option value="Web Estática">Web Estática</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="extraHosting">
+                                <label class="form-check-label" for="extraHosting">Incluir Hosting</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="extraDominio">
+                                <label class="form-check-label" for="extraDominio">Incluir Dominio</label>
+                            </div>
+
+                            <button class="btn btn-primary w-100" id="btnCotizarBasico">Guardar Cotización</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software a Medida -->
+                <div class="col-lg-4">
+                    <div class="card h-100 plan-card border-0 shadow-sm" id="cardMedida">
+                        <img src="img/img02.jpg" class="card-img-top" alt="Software a Medida"
+                            style="height:180px; object-fit:cover;">
+                        <div class="card-body">
+                            <h4 class="fw-bold text-primary">Software a Medida</h4>
+                            <p class="text-muted">Para proyectos con necesidades específicas y mayor escala.</p>
+
+                            <div class="mb-3">
+                                <label for="tipoMedida" class="form-label fw-semibold">¿Qué necesitas?</label>
+                                <select class="form-select" id="tipoMedida">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="E-Commerce">E-Commerce</option>
+                                    <option value="Aplicación Móvil">Aplicación Móvil</option>
+                                    <option value="Sistema a Medida">Sistema a Medida</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="detalleMedida" class="form-label fw-semibold">Cuéntanos más</label>
+                                <textarea class="form-control" id="detalleMedida" rows="3"
+                                    placeholder="Describe brevemente tu proyecto..." maxlength="200"></textarea>
+                                <small class="text-muted" id="contadorCaracteres">0 / 200 caracteres</small>
+                            </div>
+
+                            <button class="btn btn-primary w-100" id="btnCotizarMedida">Guardar Cotización</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cotización en Vivo -->
+                <div class="col-lg-4">
+                    <div class="card h-100 plan-card border-0 shadow-sm" id="cardCotizacionVivo">
+                        <img src="img/img01.jpg" class="card-img-top" alt="Cotización en Vivo"
+                            style="height:180px; object-fit:cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="fw-bold text-primary">Cotización en Vivo</h4>
+                            <p class="text-muted">Se actualiza mientras completas los formularios de al lado.</p>
+
+                            <div id="vistaPrevia" class="p-3 rounded-3 bg-light mb-3 flex-grow-1">
+                                <em class="text-muted">Aún no has seleccionado ninguna opción.</em>
+                            </div>
+
+                            <h6 class="fw-semibold mb-2">Cotizaciones guardadas</h6>
+                            <ul class="list-group mb-2" id="listaCotizaciones">
+                                <!-- Se llena dinámicamente vía jQuery -->
+                            </ul>
+                            <button class="btn btn-sm btn-outline-danger" id="btnLimpiarTodo">Eliminar todas</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <!-- ============================================ -->
-    <!-- FOOTER                                      -->
-    <!-- ============================================ -->
+
+    <!-- FOOTER  -->
+
     <footer class="footer py-4">
         <div class="container text-center">
             <p class="mb-0">
                 &copy; 2026 <strong>MiPortafolio</strong>. Todos los derechos reservados.
             </p>
         </div>
-        
+
     </footer>
 
     <!-- ============================================ -->
@@ -306,11 +427,7 @@
         <i class="bi bi-whatsapp"></i>
     </a>
 
-    <!-- ============================================ -->
-    <!-- SCRIPTS                                     -->
-    <!-- ============================================ -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-    </script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
