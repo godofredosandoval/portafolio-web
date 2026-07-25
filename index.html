@@ -42,6 +42,7 @@
                     <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -168,11 +169,11 @@
 
             <!-- Botones de control para demostrar manipulación del DOM -->
             <div class="text-center mb-4">
-                <button class="btn btn-primary me-2" onclick="cambiarTexto()">Cambiar Texto</button>
+                <button class="btn btn-primary me-2" onclick="cambiarTexto()">Cambiar la descripción del proyecto</button>
                 <button class="btn btn-success me-2" onclick="cambiarEstilos()">Cambiar Estilos</button>
                 <button class="btn btn-warning me-2" onclick="mostrarOcultar()">Mostrar/Ocultar</button>
                 <button class="btn btn-info" onclick="cambiarImagenes()">Cambiar Imágenes</button>
-                <button class="btn btn-info" onclick="restablecerTodo()">resetear todo</button>
+                <button class="btn btn-info" onclick="restablecerTodo()">Resetear todo</button>
             </div>
 
             <div class="row g-4" id="proyectosContainer">
@@ -236,80 +237,7 @@
     </section>
 
     <!-- ============================================ -->
-    <!-- SECCIÓN: CONTACTO                           -->
-    <!-- ============================================ -->
-    <section id="contacto" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Contacto</h2>
-            <div class="row g-4">
-                <!-- Información de contacto -->
-                <div class="col-lg-6">
-                    <div class="contact-info h-100 p-4 rounded-4 shadow-sm bg-white">
-                        <h4 class="fw-bold">¿Tienes un proyecto en mente?</h4>
-                        <p class="text-muted mt-3">
-                            Estoy siempre abierto a nuevas oportunidades y colaboraciones.
-                            No dudes en contactarme.
-                        </p>
-                        <ul class="list-unstyled mt-4">
-                            <li class="mb-3">
-                                <i class="bi bi-envelope-fill text-primary me-3 fs-5"></i>
-                                <span>gsandovalramirez@gmail.com</span>
-                            </li>
-                            <li class="mb-3">
-                                <i class="bi bi-phone-fill text-primary me-3 fs-5"></i>
-                                <span>+51 951506863</span>
-                            </li>
-                            <li class="mb-3">
-                                <i class="bi bi-geo-alt-fill text-primary me-3 fs-5"></i>
-                                <span>Arequipa - Perú</span>
-                            </li>
-                        </ul>
-                        <div class="social-links mt-4">
-                            <a href="https://pe.linkedin.com/" target="_blank"
-                                class="btn btn-outline-primary rounded-circle me-2"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/" target="_blank"
-                                class="btn btn-outline-dark rounded-circle me-2"><i class="bi bi-github"></i></a>
-                            <a href="https://x.com/?lang=es" target="_blank"
-                                class="btn btn-outline-info rounded-circle me-2"><i class="bi bi-twitter-x"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank"
-                                class="btn btn-outline-danger rounded-circle me-2"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.youtube.com/" target="_blank"
-                                class="btn btn-outline-danger rounded-circle"><i class="bi bi-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-
-<!-- Formulario de contacto -->
-                <div class="col-lg-6">
-                    <form class="p-4 rounded-4 shadow-sm bg-white" id="miFormulario">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label fw-semibold">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label fw-semibold">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="4"
-                                placeholder="Escribe tu mensaje aquí..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">
-                            <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-    </section>
-
-
-    <!-- ============================================ -->
-    <!-- SECCIÓN: SERVICIOS -->
+    <!-- SECCIÓN: SERVICIOS (AHORA DESPUÉS DE PROYECTOS) -->
     <!-- ============================================ -->
     <section id="servicios" class="py-5">
         <div class="container">
@@ -408,16 +336,84 @@
         </div>
     </section>
 
+    <!-- ============================================ -->
+    <!-- SECCIÓN: CONTACTO                           -->
+    <!-- ============================================ -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Contacto</h2>
+            <div class="row g-4">
+                <!-- Información de contacto -->
+                <div class="col-lg-6">
+                    <div class="contact-info h-100 p-4 rounded-4 shadow-sm bg-white">
+                        <h4 class="fw-bold">¿Tienes un proyecto en mente?</h4>
+                        <p class="text-muted mt-3">
+                            Estoy siempre abierto a nuevas oportunidades y colaboraciones.
+                            No dudes en contactarme.
+                        </p>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-3">
+                                <i class="bi bi-envelope-fill text-primary me-3 fs-5"></i>
+                                <span>gsandovalramirez@gmail.com</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-phone-fill text-primary me-3 fs-5"></i>
+                                <span>+51 951506863</span>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-geo-alt-fill text-primary me-3 fs-5"></i>
+                                <span>Arequipa - Perú</span>
+                            </li>
+                        </ul>
+                        <div class="social-links mt-4">
+                            <a href="https://pe.linkedin.com/" target="_blank"
+                                class="btn btn-outline-primary rounded-circle me-2"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/" target="_blank"
+                                class="btn btn-outline-dark rounded-circle me-2"><i class="bi bi-github"></i></a>
+                            <a href="https://x.com/?lang=es" target="_blank"
+                                class="btn btn-outline-info rounded-circle me-2"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"
+                                class="btn btn-outline-danger rounded-circle me-2"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"
+                                class="btn btn-outline-danger rounded-circle"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <div class="col-lg-6">
+                    <form class="p-4 rounded-4 shadow-sm bg-white" id="miFormulario">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4"
+                                placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">
+                            <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER  -->
-
     <footer class="footer py-4">
         <div class="container text-center">
             <p class="mb-0">
                 &copy; 2026 <strong>MiPortafolio</strong>. Todos los derechos reservados.
             </p>
         </div>
-
     </footer>
 
     <!-- ============================================ -->
