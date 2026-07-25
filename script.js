@@ -376,6 +376,4 @@ function eliminarCotizacion(index) {
 function limpiarTodasLasCotizaciones() {
     localStorage.clear();
 }
-
-
-alert("Integrantes del Grupo 2:\n\n- Godofredo Sandoval Ramírez\n- Máximo Polo Salinas\n- Jhon Bryan Curo Maldonado\n- Rafael Alberto Sipión Díaz\n- Gálvez Martínez Jim Antony\n- Gabriela Mirtha Rios Villanueva\n-Luis Helbert Otoya Medina");
+alert("Integrantes del Grupo 2:\n\n- Godofredo Sandoval Ramírez\n- Máximo Polo Salinas\n- Jhon Bryan Curo Maldonado\n- Rafael Alberto Sipión Díaz\n- Gálvez Martínez Jim Antony\n- Gabriela Mirtha Rios Villanueva\n- Luis Helbert Otoya Medina");
